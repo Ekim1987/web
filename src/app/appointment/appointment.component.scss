@@ -1,0 +1,69 @@
+
+.col-lg-12 > .col-6 .request-form {
+    padding: 40px 40px 40px 40px;
+  }
+  .bg-color{
+    background: #ececec;
+    padding: 30px 30px 30px 30px;
+  }
+  .container .col-md-12 .text-center{
+  color: turquoise;
+  border-bottom: 1px solid #ffc0cb;
+  }
+  // .wrapper{
+  //   text-align: center;
+  //   position: relative;
+  // }
+  // .wrapper .line {
+  //   border-bottom: 1px solid #ffc0cb;
+  //   position: absolute;
+  //   width: 100%;
+  //   top: 15px;
+  // }
+  // .wrapper .textbox{
+  //   position: absolute;
+  //   width: 100%;
+  // }
+  // .wrapper .textbox .text {
+  //   background-color: white;
+  //   margin: 0px auto;
+  //   display: inline;
+  //   padding:0px 10px;
+  //   text-align: center;
+  //   font-size:24px;
+  // }
+  
+  
+   .contact-us ul{
+    list-style-type:none;
+    padding: 0;
+    line-height: 2;
+  }
+  .btn-send{
+    background: turquoise;
+    color: #fff;
+  }
+  .btn:disabled{
+    cursor: not-allowed;
+    
+  }
+  
+  .required::after{
+    content: "*";
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    left: 21px;
+  
+  }
+
+  button.calendar{
+      width: 2.75rem;
+      
+  }
+  .calendar{
+    border-bottom-right-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+  }

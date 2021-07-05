@@ -1,0 +1,23 @@
+<div class="slider">
+  <ngb-carousel  *ngIf="slides" class="carousel slide">
+    <ng-template ngbSlide *ngFor="let slide of slides">
+    <div class="picsum-img-wrapper carousel-item active" >
+        <img
+          [src]="[slide.img]"
+          style="width:100%;height: 98vh;"
+          alt="Random first slide"
+        />
+      </div>
+      <div  class="carousel-caption fxHide.xs right text-centre col-xs-2">
+        <h1 class="text-light"> TwinkleKidz Preschool</h1>
+        <p class="heading-title">Nurturing each child's
+          thirst for knowledge <br> Give your child the best start to their school career.</p>
+        <p><a class="btn btn-lg btn-bg-pink" routerLink="/appointment"  role="button">Book an appointment</a>
+        <a class="btn btn-lg btn-bg-turqoise" href="">Online Registration</a>
+        </p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+

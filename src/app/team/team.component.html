@@ -1,0 +1,25 @@
+
+<div class="container"  style="margin-top: 4rem;">
+  <div class="row wow fadeInLeft"  data-wow-duration="0.7s" data-wow-delay="0.5s">
+    <!-- <div class="col-md-4">.col-md-4</div> -->
+    <div class="col-md-4 offset-md-4 mb-4">
+      <h2 class="text-center " style="color:turquoise;">
+        Meet the Team
+      </h2>
+      <hr style="border-bottom:1px solid #ffc0cb;" />
+    </div>
+  </div>
+  <owl-carousel-o  [options]="carouselOptions">
+    <ng-container  *ngFor="let team of teams; let ind = index">
+      <ng-template carouselSlide>
+        <img src="../../assets/img/twinklespinner.gif" [lazyLoad]="team.img" [alt]="team.title" [title]="team.title" />
+        <div class="container mt-3">
+          <div>
+            <h5 class="text-center">{{ team.title }}</h5>
+            <p class="text-center">{{team.position}}</p>
+          </div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>

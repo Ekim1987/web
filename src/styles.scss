@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.color_grey {
+  color: #6c757d;
+}
+.color_pink {
+  color: #ffc0cb;
+}
+.ul {
+  list-style-type: none;
+}
+.bg-color {
+  background: #ececec;
+  padding: 30px 30px 30px 30px;
+}
+.color-dark {
+  color: #403e3e;
+}
+.bg-color-pink {
+  background-color: #ffc0cb;
+  color: white;
+  padding-top: 100px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.bg-color-dark-pink {
+  background-color: #ff8181;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  // background: #ff8181;
+
+  background-color: #ff8181;
+	background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+// body{
+// margin: 100px 0 0 0 !important;
+// font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+// font-size: 1rem;
+// font-weight: 400;
+// line-height: 1.5;
+// color: #212529;
+// text-align: left;
+// background-color: #fff;
+// }

@@ -1,0 +1,71 @@
+<!-- Footer -->
+<footer class="page-footer font-small  pt-4">
+  <!-- Footer Text -->
+  <div class="container-fluid text-center bg-color-pink text-md-left ">
+    <div class="container">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-4 col-sm-12 text-center  mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Hours</h5>
+          <ul>
+            <li>{{ store.hours.weekdays }}</li>
+            <li>{{ store.hours.weekends }}</li>
+            <!-- <li>{{ store.hours.holidays }}</li> -->
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- <hr class="clearfix w-100 d-md-none pb-3" /> -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-sm-12 text-center  mt-3 mb-3">
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Contact Us</h5>
+          <ul>
+            <li> <a style="text-decoration: none; color: white;" href="tel:{{store.telephone}}">Telephone: {{ store.telephone }}</a></li>
+            <li><a style="text-decoration: none; color: white;" href="tel:{{store.mobile}}"> Mobile: {{ store.mobile }}</a></li>
+            <li><a style="text-decoration: none; color: white;" href="mailto:{{store.email}}"> Email: {{ store.email }}</a></li>
+          </ul>
+          <div>
+            <h5 class="text-uppercase font-weight-bold">ADDRESS</h5>
+            <ul>
+                <li>
+                  <a style="text-decoration: none; color: white;"   target="_blank"
+                  href="http://maps.google.com/?q={{ store.address }}">{{store.address}}</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <hr class="clearfix w-100" /> -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 mt-3 text-center  col-sm-12">
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">Navigation</h5>
+
+          <ul>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"> <a style="text-decoration: none; color: white;" routerLink="/">Home</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a style="text-decoration: none; color: white;" routerLink="/about-us"> About Us</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a style="text-decoration: none; color: white;" routerLink="/gallery"> Gallery</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a style="text-decoration: none; color: white;" routerLink="/contact-us">Contact Us</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a style="text-decoration: none; color: white;" routerLink="/registration" >Online Registration</a></li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a style="text-decoration: none; color: white;" routerLink="/appointment" >Book an appointment</a></li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+      </div>
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Text -->
+ <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-color-dark-pink">
+    © {{year}} Copyright:Twinkle Kidz Preschool | Made with <fa-icon  [icon]="faHeart"> </fa-icon>
+    <a style="color:#212529;text-decoration:none;" href="mailto:micky.lives@gmail.com"> by  Michael Boonekamp </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->

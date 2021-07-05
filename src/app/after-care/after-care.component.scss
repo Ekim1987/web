@@ -1,0 +1,10 @@
+p::before {
+  content: " \2713"; 
+  color: green;
+
+}
+p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #6c757d;
+}

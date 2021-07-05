@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 mb-3 mt-5">
+            <h2 class="text-center" style="color: turquoise;">
+                Gallery
+            </h2>
+            <hr style="border-bottom: 1px solid #ffc0cb;" />
+        </div>
+    </div>
+</div>
+
+<div class="container"  style="margin-bottom: 4rem;">
+    <button type="button" style="text-align: center;margin-top: 30px;margin-bottom: 30px;"  class="btn btn-secondary"  (click)="showVideo =!showVideo">{{ showVideo ? 'Hide YouTube Videos' : 'Show YouTube Vidoes'}}</button>
+    <div *ngIf="showVideo" class="row service">
+        <div class="col-md-6" *ngFor="let video of youtube">
+            <iframe [src]="video.url | safe" height="350" allowfullscreen style="border-radius: 10px;" width="100%"
+                frameborder="0">
+            </iframe>
+        </div>
+    </div>
+ <div class="row service">
+        <div class="col-md-6" *ngFor="let image of imagesArray">
+            <img [src]="image.src" width="600" height="400" class="img-fluid" style="margin:5px;"  [alt]="image.caption" />
+        </div>
+    </div>
+</div>

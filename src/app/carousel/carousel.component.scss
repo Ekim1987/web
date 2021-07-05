@@ -1,0 +1,66 @@
+// .carousel{
+// background-size: cover;
+// margin-top: 10px;
+// height: 100px;
+// }
+
+.bg-color {
+    background-color: turquoise;
+}
+.slider_wrapper {
+    overflow: visible;
+    height: 800px;
+}
+.slider {
+    border: 1px solid grey;
+    position: relative;
+    display: block;
+    margin-bottom: 2rem;
+}
+.btn-bg-pink {
+    background-color: #ffc0cb;
+    color: white;
+}
+.btn-bg-turqoise {
+    background-color: turquoise;
+    color: white;
+}
+
+.carousel-caption {
+    margin-bottom: 50px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carousel-caption {
+        display: none !important;
+    }
+    .slider img{
+        height: inherit !important;
+    }
+}
+.slider img {
+    height:755px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    // bottom: 36px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.text-light {
+  font-weight: bolder;
+  text-shadow: 2px 0 0 #000000, -2px 0 0 #000, 0 2px 0 #000000, 0 -2px 0 #000, 1px 1px #0a0a0a, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
+}
+.heading-title{
+  font-weight: 600;
+  text-shadow: 2px 0 0 #000000, -2px 0 0 #000, 0 2px 0 #000000, 0 -2px 0 #000, 1px 1px #0a0a0a, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.btn {
+  margin:1.2rem;
+}
